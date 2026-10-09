@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Check } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { SectionEyebrow } from "@/components/brand";
+import { ProBillingChoice } from "@/sections/pro-billing-choice";
 
 const freeFeatures = [
   "3 estimates per month",
@@ -77,9 +78,7 @@ export function PricingEntry() {
               <p className="mt-1 text-[11px] leading-4 text-[#777180]">Billed annually at $468/year.</p>
               <FeatureList items={proFeatures} />
             </div>
-            <Link href="https://app.supequote.com/signup" className="group mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-[#7c3aed] px-5 text-[13px] font-semibold text-white shadow-[0_5px_16px_rgba(124,58,237,.16)] transition hover:bg-[#6d28d9] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-[#7c3aed]">
-              Get Pro <span aria-hidden="true" className="ml-2 transition-transform group-hover:translate-x-0.5">→</span>
-            </Link>
+            <ProBillingChoice />
           </Reveal>
         </div>
       </div>
